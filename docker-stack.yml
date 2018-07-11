@@ -1,0 +1,21 @@
+version: "3"
+services:
+  app-back:
+    image: brunaobh/go
+    networks:
+      - mongo-go
+      - nginx-go
+    ports: 
+      - 3000:3000
+    depends_on:
+      - mongodb
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+networks:
+  mongo-go:
+  nginx-go:
