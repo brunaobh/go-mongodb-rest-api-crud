@@ -7,7 +7,7 @@ Feel free to use, comment and contribute
 
 ## Instructions
 
-Create a swarm ([Docker Swarm Cheatsheet](https://medium.com/@codingfriend/docker-swarm-cheatsheet-22665e3278b1){:target="_blank"}). You do this by running:
+Create a swarm ([Docker Swarm Cheatsheet](https://medium.com/@codingfriend/docker-swarm-cheatsheet-22665e3278b1)). You do this by running:
 
 ```bash
 docker swarm init
