@@ -13,4 +13,4 @@ VOLUME /data/db
 EXPOSE 27017 28017
 
 ENTRYPOINT [ "/root/run.sh" ]
-CMD ["mongod"]
+CMD ["mongod", "--bind_ip_all"]
